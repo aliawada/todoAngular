@@ -1,0 +1,9 @@
+<div [ngClass] = "setClasses()">
+  <table class="table">
+    <tr>
+      <th><input type="checkbox" class="form-check-input" (change)="onToggle(todo)"></th>
+      <th>{{ todo.title }}</th>
+      <th><button class="btn btn-danger" (click)="onDelete(todo)">delete</button></th> 
+    </tr>  
+  </table>
+</div>
